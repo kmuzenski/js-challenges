@@ -1,5 +1,26 @@
 <script>
+var list = [1,2,3]; //creates array
 
-var a = new array(1,2,3);
+document.write(list);
+document.write("<br>");
 
+var newList = []; // empty array
+
+var rotate = list.length - 2; //create var to rotate
+
+for (var i = rotate; i < list.length; i++){  //for loop, assigning var i to rotate
+
+	newList.push(list[i]);  //add new elements into array / return the new length
+	
+}
+
+for (i = 0; i < rotate; i++){ //add to length of new array 
+	
+	newList.push(list[i]);
+}
+for (i = 0; i < newList.length; i++) { // add 5 to rotated array
+	newList[i] += 5;
+}
+
+document.write(newList); //writes the array directly to html doc
 </script>
